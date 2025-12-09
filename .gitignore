@@ -1,3 +1,6 @@
+# Ignorar el propio .gitignore
+.gitignore
+
 # Python
 __pycache__/
 *.py[cod]
@@ -61,10 +64,6 @@ env/
 *.nav
 *.snm
 *.vrb
-
-# Outputs (demasiado pesados)
-ajuste_distribuciones/outputs/*/plots/*.png
-*.pdf
 
 # Archivos temporales
 *.tmp

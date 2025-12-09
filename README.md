@@ -27,37 +27,30 @@ Investigación académica sobre la modelización y simulación de eventos discre
 ```
 TP-Final-Simulacion/
 │
-├── README.md                          # Este archivo
-├── requirements.txt                   # Dependencias Python
+├── 📄 README.md                                    # Este archivo
+├── 📄 requirements.txt                             # Dependencias Python
+├── 📊 Simulacion de la Dinamica de una Mempool de Blockchain - Simon Ocampo.pdf
+├── 🎥 Video Presentación Mempool Blockchain - STO.mp4
+├── 📊 Presentacion TP Final Simulacion - STO.pdf
 │
-├── datos_empiricos/                   # Captura de datos reales de Bitcoin
-│   ├── mempool_capture.py            # Script de captura vía WebSocket
-│   ├── mempool_data_low.csv          # Dataset baja congestión (1 hora)
-│   └── mempool_data_high.csv         # Dataset alta congestión (1 hora)
+├── 📂 Datos empíricos (raíz del proyecto)
+│   ├── mempool_capture.py                          # Script de captura WebSocket
+│   ├── mempool_data_final_20250919_054047_low.csv  # Dataset baja congestión
+│   └── mempool_data_final_20250922_110158_high.csv # Dataset alta congestión
 │
-├── ajuste_distribuciones/             # Framework de ajuste robusto
-│   ├── fitter_code.py                # Motor principal de ajuste
-│   ├── quick_core_distributions.py   # Generador de figuras (hist, Q-Q)
-│   ├── quick_mixture_qq.py           # Q-Q para modelo segmentado
-│   ├── quick_segmented_density.py    # Gráficos de densidad segmentada
-│   └── outputs/                      # Reportes de ajuste (BIC, bootstrap, CV)
-│       ├── high_bootstrap1000/
-│       └── low_bootstrap1000/
+├── 📂 Ajuste de distribuciones (raíz del proyecto)
+│   ├── fitter_code.py                              # Framework robusto completo
+│   ├── quick_core_distributions_plots.py           # Generador de figuras base
+│   ├── quick_mixture_qq_size.py                    # Q-Q plots de mezclas
+│   └── quick_segmented_density_size.py             # Densidades segmentadas
 │
-├── modelo_simulacion/                 # Modelo SimPy y análisis
-│   ├── modelo_sim.py                 # Simulación de eventos discretos
-│   ├── anova_completo.py             # Análisis de varianza factorial
-│   ├── analisis_final.py             # Análisis estadístico adicional
-│   └── resultados_simulacion.csv     # Salida del diseño factorial (180 corridas)
-│
-└── paper/                             # Documento LaTeX
-    ├── main.tex                       # Código fuente del paper
-    ├── main.pdf                       # Paper compilado (entregar separado)
-    ├── reference.bib                  # Bibliografía
-    └── figures/                       # Figuras generadas
-        ├── high/
-        └── low/
+└── 📂 Modelo de simulación (raíz del proyecto)
+    ├── modelo_sim.py                               # Simulación SimPy (180 corridas)
+    ├── anova_completo.py                           # Análisis ANOVA factorial
+    └── Resultados_Simulacion_Corregido_20251207_202227.csv
 ```
+
+**Nota:** Por simplicidad, todos los archivos de código están en la raíz del repositorio para acceso directo.
 
 ---
 
